@@ -1,0 +1,420 @@
+body {
+    background-color: #FAFBF1;
+    font-family: 'Roboto', sans-serif;
+    width: 100vw;
+}
+
+section {
+    /* margin-top: 40px;
+    margin-bottom: 40px; */
+    margin: 0px 5%;
+    align-content: center;
+}
+
+.fixedButton{
+    position: fixed;
+    bottom: 0px;
+    right: 20px; 
+    padding: 40px;
+}
+.roundedFixedBtn{
+  height: 88px;
+  line-height: 80px;  
+  width: 88px;  
+  font-size: 2em;
+  font-weight: bold;
+  border-radius: 50%;
+  background-color: #9747FF;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.roundedFixedBtn img {
+    width: 32px;
+    height: 32px;
+}
+
+p {
+font-family: 'Roboto', sans-serif;
+line-height: 140%;
+font-size: 16px;
+}
+
+button {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    background-color: #212121;
+    border: none;
+    padding: 20px 30px 20px 30px;
+    margin-top: 40px;
+    margin-bottom: 50px;
+    cursor: pointer;
+}
+
+button span{
+    display: inline-block;
+    vertical-align: middle;
+    color: #FAFBF1;
+}
+
+span img {
+    width: 25px;
+    height: 25px;
+    padding-left: 5px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/* button a {
+    text-decoration: none;
+    color:#FAFBF1;
+} */
+
+/* button img {
+    width: 25px;
+    height: 25px;
+    padding-left: 5px;
+} */
+
+.sectionDivider {
+    grid-area: sectionDivider;
+    margin-top: 60px;
+    margin-bottom: 40px;
+    border-bottom: solid 1px #212121;
+}
+
+/* Navigation Bar Content */
+
+nav {
+    grid-area: nav;
+    margin: 0px 5%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "img tabs tabs";
+    align-items: flex-end;
+    gap: 40px;    
+}
+
+nav img {
+    grid-area: img;
+    max-width: 100%;
+    height: auto;
+    border-bottom: solid 1px #212121;
+    padding-bottom: 20px;
+    margin-right: 60px;
+    margin-top: 40px;
+}
+
+.tabs {
+    grid-area: tabs;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: solid 1px #212121;
+    padding-bottom: 20px;
+}
+
+.tabs a {
+    text-decoration: none;
+    color: #212121;
+}
+
+/* Intro Content */
+
+#intro {
+
+    display: grid;
+    grid-area: intro;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "laurenPhoto aboutText aboutText";
+    gap: 40px;
+}
+
+#laurenPhoto {
+    grid-area: laurenPhoto;
+}
+
+#laurenPhoto img {
+    max-width: 100%;
+    height: auto;
+    margin-right: 60px;
+    margin-top: 60px;
+    background-image: url(/images/LaurenPhoneBW.jpeg);
+}
+
+#aboutText {
+    grid-area: aboutText;
+    margin-top: 20px;
+    /* margin: auto 0; */
+}
+
+#aboutText h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 42px;
+    line-height: 100%;
+}
+
+#aboutText p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    }
+
+/* Skills Content */
+
+#skills {
+    grid-area: skills;
+}
+
+#skillsContainer {
+    display: flex;
+    flex-direction: row;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+    "ux ui feDev";
+    gap: 40px;
+}
+
+#skills img {
+    width: 80px;
+    height: 80px;
+}
+
+h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 32px;
+    line-height: 110%;
+}
+
+#skillsContainer p {
+    font-family: 'Roboto', sans-serif;
+    line-height: 150%;
+    font-size: 20px;
+    }
+
+#ux {
+    grid-area: ux;
+    padding-right: 20px;
+}
+
+#ui {
+    grid-area: ui;
+    padding-right: 20px;
+}    
+
+#feDev {
+    grid-area: feDev;
+    padding-right: 20px;
+}
+
+#skillsContainer span img {
+    width: 25px;
+    height: 25px;
+    padding-left: 5px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/* Work Content */
+
+#work {
+    grid-area: work;
+    margin-bottom: 60px;
+    /* display: flex;
+    flex-direction: column; */
+}
+
+#caseStudies {
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "naba skippr cs3"
+    "cs4 cs5 cs6";
+    gap: 40px;
+}
+
+.card {
+    /* width: 420px;
+    margin-bottom: 40px; */
+    display: flex;
+    flex-direction: column;
+}
+
+.card img {
+    margin-top: 20px;
+    /* width: auto; */
+    max-width: 100%;
+    height: auto;
+    /* object-fit: cover;
+    object-position: bottom; */
+}
+
+.cardText {
+    /* width: 100%; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+#naba {
+    grid-area: naba;
+}
+
+#skippr {
+    grid-area: skippr;
+}
+
+#cs3 {
+    grid-area: cs3;
+}
+
+#cs4 {
+    grid-area: cs4;
+}
+
+#cs5 {
+    grid-area: cs5;
+}
+
+#cs6 {
+    grid-area: cs6;
+}
+
+.cardText h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 16px;
+}
+
+.cardText p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+}
+
+/* Footer Content */
+
+footer .sectionDivider {
+    margin: 0px 5%;
+    margin-bottom: 80px;
+    border-bottom: solid 1px #212121;
+}
+
+/* Media Breakpoints */
+
+@media only screen and (max-width: 1030px) {
+
+    body {
+        margin: 0 auto;
+    }
+
+    #laurenPhoto img {
+        margin-top: 50px;
+    }
+
+    #aboutText h1 {
+        font-size: 32px;
+    }
+}
+@media only screen and (max-width: 800px) {
+
+    nav {
+        margin-right: auto;
+        margin-left: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    nav img {
+        width: auto;
+    }
+
+    .tabs {
+        margin-left: 0px;
+        width: auto;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+
+    .tabs > li:not(:last-child) {
+        padding-right: 20px;
+    }
+    
+
+    #intro {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #aboutText {
+        margin-top: 0px;
+    }
+
+    #caseStudies {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: 
+        "naba skippr"
+        "cs3 cs4"
+        "cs5 cs6";
+    }
+}
+
+    @media only screen and (max-width: 480px) {
+    
+        nav {
+            /* margin-right: auto; */
+            margin-left: 22px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+        }
+
+        nav img {
+            width: 70%;
+        }
+
+        .tabs {
+            margin-left: 0px;
+            width: auto;
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
+
+        .tabs > li:not(:last-child) {
+            padding-right: 20px;
+        }
+    
+        #intro {
+            grid-area: intro;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        #skillsContainer {
+            display: flex;
+            flex-direction: column;
+        }
+    
+        #caseStudies {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    @media only screen and (max-width: 380px) {
+    .tabs > li:not(:last-child) {
+        padding-right: 15px;
+    }
+    }
