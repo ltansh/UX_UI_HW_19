@@ -17,6 +17,7 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
     <title>Lauren Tan Portfolio</title>
   </head>
 
@@ -55,10 +56,12 @@
           Have a look around and please feel free to <b>get in touch.</b>
         </p>
         <button>
-          <span><a href=""></a></span>
-          <span>Say Hello, Back</span>
-          <span><img src="images/ButtonArrowWhite.png" /></span>
+          <div class="btnContent">
+            <span class="iconHidden"><i class="ph ph-arrow-right"></i></span>
+            <a href="https://ltansh.github.io/UX_UI_HW_19/">Say Hello, Back</a>
+          </div>
         </button>
+
         <a class="fixedButton" href="" alt="Scroll Up to Top">
           <div class="roundedFixedBtn">
             <img src="images/ButtonArrowUp.png" />
@@ -76,7 +79,10 @@
 
       <div id="skillsContainer">
         <div id="ux">
-          <img src="images/Smiley.png" alt="Smiley Icon" />
+          <div class="displayImg">
+            <img src="images/Smiley.png" alt="Smiley" />
+          </div>
+          <div class="hiddenImg"><img src="images/SmileyWink.png" /></div>
           <h2>UX Research + <br />Analysis</h2>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -85,13 +91,15 @@
             aliquip ex ea commodo consequat.
           </p>
           <button>
-            <span><a href=""></a></span>
-            <span>UX Projects</span>
-            <span><img src="images/ButtonArrowWhite.png" /></span>
+            <div class="btnContent">
+              <span class="iconHidden"><i class="ph ph-arrow-right"></i></span>
+              <a href="https://ltansh.github.io/UX_UI_HW_19/">UX Projects</a>
+            </div>
           </button>
         </div>
         <div id="ui">
           <img src="images/MagicWand.png" alt="Magic Wand Icon" />
+          <div class="hiddenImg"><img src="images/MagicColor.png" /></div>
           <h2>UI Design + <br />Art Direction</h2>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -100,13 +108,15 @@
             aliquip ex ea commodo consequat.
           </p>
           <button>
-            <span><a href=""></a></span>
-            <span>UI + AD Projects</span>
-            <span><img src="images/ButtonArrowWhite.png" /></span>
+            <div class="btnContent">
+              <span class="iconHidden"><i class="ph ph-arrow-right"></i></span>
+              <a href="https://ltansh.github.io/UX_UI_HW_19/">UI Projects</a>
+            </div>
           </button>
         </div>
         <div id="feDev">
           <img src="images/Code.png" alt="Code Icon" />
+          <div class="hiddenImg"><img src="images/CodeColor.png" /></div>
           <h2>Front End <br />Development</h2>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -115,9 +125,12 @@
             aliquip ex ea commodo consequat.
           </p>
           <button>
-            <span><a href=""></a></span>
-            <span>FE Dev Projects</span>
-            <span><img src="images/ButtonArrowWhite.png" /></span>
+            <div class="btnContent">
+              <span class="iconHidden"><i class="ph ph-arrow-right"></i></span>
+              <a href="https://ltansh.github.io/UX_UI_HW_19/"
+                >FE Dev Projects</a
+              >
+            </div>
           </button>
         </div>
       </div>
@@ -134,60 +147,60 @@
         <div id="naba">
           <div class="card">
             <img src="images/placeholder_img2.png" alt="placeholder img" />
-            <div class="cardText">
-              <h3><b>NABA Website Redesign</b></h3>
-              <p>UX, UI, Project Mgmt</p>
-            </div>
+          </div>
+          <div class="cardText">
+            <h3><b>NABA Website Redesign</b></h3>
+            <p>UX, UI, Project Mgmt</p>
           </div>
         </div>
 
         <div id="skippr">
           <div class="card">
             <img src="images/placeholder_img2.png" alt="placeholder img" />
-            <div class="cardText">
-              <h3><b>Skippr. Grocery Shopping App</b></h3>
-              <p>UX, UI, Project Mgmt</p>
-            </div>
+          </div>
+          <div class="cardText">
+            <h3><b>Skippr. Grocery Shopping App</b></h3>
+            <p>UX, UI, Project Mgmt</p>
           </div>
         </div>
 
         <div id="cs3">
           <div class="card">
             <img src="images/placeholder_img2.png" alt="placeholder img" />
-            <div class="cardText">
-              <h3><b>Case Study 3</b></h3>
-              <p>UX, UI, Project Mgmt</p>
-            </div>
+          </div>
+          <div class="cardText">
+            <h3><b>Case Study 3</b></h3>
+            <p>UX, UI, Project Mgmt</p>
           </div>
         </div>
 
         <div id="cs4">
           <div class="card">
             <img src="images/placeholder_img2.png" alt="placeholder img" />
-            <div class="cardText">
-              <h3><b>Case Study 4</b></h3>
-              <p>UX, UI, Project Mgmt</p>
-            </div>
+          </div>
+          <div class="cardText">
+            <h3><b>Case Study 4</b></h3>
+            <p>UX, UI, Project Mgmt</p>
           </div>
         </div>
 
         <div id="cs5">
           <div class="card">
             <img src="images/placeholder_img2.png" alt="placeholder img" />
-            <div class="cardText">
-              <h3><b>Case Study 5</b></h3>
-              <p>UX, UI, Project Mgmt</p>
-            </div>
+          </div>
+          <div class="cardText">
+            <h3><b>Case Study 5</b></h3>
+            <p>UX, UI, Project Mgmt</p>
           </div>
         </div>
 
         <div id="cs6">
           <div class="card">
             <img src="images/placeholder_img2.png" alt="placeholder img" />
-            <div class="cardText">
-              <h3><b>Case Study 6</b></h3>
-              <p>UX, UI, Project Mgmt</p>
-            </div>
+          </div>
+          <div class="cardText">
+            <h3><b>Case Study 6</b></h3>
+            <p>UX, UI, Project Mgmt</p>
           </div>
         </div>
       </div>
@@ -201,5 +214,6 @@
       </div>
     </footer>
   </body>
+
   <script src="js/index.js"></script>
 </html>

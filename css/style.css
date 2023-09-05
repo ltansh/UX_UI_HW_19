@@ -44,34 +44,56 @@ font-size: 16px;
 }
 
 button {
+    position: relative;
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
+    text-align: center;
     background-color: #212121;
     border: none;
     padding: 20px 30px 20px 30px;
     margin-top: 40px;
     margin-bottom: 50px;
     cursor: pointer;
+    transition: all 0.5s ease-in-out;
 }
 
-button span{
+button:hover {
+    background-color: #F2994A;
+    }
+
+.btnContent {
+    display: inline-block;
+    vertical-align: middle;
+    color: #FAFBF1;
+    /* transition: all 0.5s ease-in-out; */
+}
+
+
+.iconHidden {
+    /* width: 32px;
+    height: 32px; */
+    position: absolute;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+.iconHidden:hover {
+    position: relative;
+    opacity: 1;
+    translate: 0px, 20px;
+}
+
+i {
+    padding-left: 5px;
     display: inline-block;
     vertical-align: middle;
     color: #FAFBF1;
 }
 
-span img {
-    width: 25px;
-    height: 25px;
-    padding-left: 5px;
-    display: inline-block;
-    vertical-align: middle;
-}
-
-/* button a {
+a {
     text-decoration: none;
     color:#FAFBF1;
-} */
+}
 
 /* button img {
     width: 25px;
@@ -122,6 +144,11 @@ nav img {
 .tabs a {
     text-decoration: none;
     color: #212121;
+}
+
+.tabs li:hover {
+    font-weight: 700;
+    text-align: center;
 }
 
 /* Intro Content */
@@ -186,6 +213,18 @@ nav img {
     height: 80px;
 }
 
+
+.hiddenImg img {
+    position: absolute;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.hiddenImg:hover {
+    opacity: 1;
+}
+
 h2 {
     font-family: 'Playfair Display', serif;
     font-size: 32px;
@@ -231,6 +270,8 @@ h2 {
 }
 
 #caseStudies {
+    padding-top: 20px;
+    padding-bottom: 20px;
     display: grid; 
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
@@ -241,19 +282,22 @@ h2 {
 }
 
 .card {
-    /* width: 420px;
-    margin-bottom: 40px; */
     display: flex;
     flex-direction: column;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
 }
 
 .card img {
-    margin-top: 20px;
-    /* width: auto; */
     max-width: 100%;
-    height: auto;
-    /* object-fit: cover;
-    object-position: bottom; */
+    max-height: 100%;
+    transition: all 0.5s ease-in-out;
+}
+
+.card img:hover {
+    transform: scale(1.3);
+    cursor: pointer;
 }
 
 .cardText {
@@ -266,26 +310,38 @@ h2 {
 
 #naba {
     grid-area: naba;
+    display: flex;
+    flex-direction: column;
 }
 
 #skippr {
     grid-area: skippr;
+    display: flex;
+    flex-direction: column;
 }
 
 #cs3 {
     grid-area: cs3;
+    display: flex;
+    flex-direction: column;
 }
 
 #cs4 {
     grid-area: cs4;
+    display: flex;
+    flex-direction: column;
 }
 
 #cs5 {
     grid-area: cs5;
+    display: flex;
+    flex-direction: column;
 }
 
 #cs6 {
     grid-area: cs6;
+    display: flex;
+    flex-direction: column;
 }
 
 .cardText h3 {
