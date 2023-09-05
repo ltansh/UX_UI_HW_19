@@ -30,7 +30,13 @@ section {
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  transition: all 0.5s ease-in-out;
 }
+
+.roundedFixedBtn:hover {
+    background-color: #F2994A;
+}
+
 
 .roundedFixedBtn img {
     width: 32px;
@@ -123,7 +129,7 @@ nav {
 
 nav img {
     grid-area: img;
-    max-width: 100%;
+    max-width: 75%;
     height: auto;
     border-bottom: solid 1px #212121;
     padding-bottom: 20px;
