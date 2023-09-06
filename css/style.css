@@ -132,17 +132,29 @@ nav {
     gap: 40px;
 }
 
-.logoImg img {
-    max-width: 76%;
+.logoSprite {
+    grid-area: img;
     border-bottom: solid 1px #212121;
-    padding-bottom: 20px;
+    padding-bottom: 30px;
     margin-right: 60px;
     margin-top: 40px;
-    grid-area: img;
+    max-width: 362px;
+    height: 84px;
     display: flex;
     flex-direction: column;
     align-items: baseline;
-    animation: logoAnimate 2s infinite
+    background: url(../images/logo-sprite.svg);
+    animation: logoSprite 2s steps(5) infinite;
+}
+
+@keyframes logoSprite {
+    0% {
+        background-position: 0 0;
+    }
+
+    100% {
+        background-position: 0 -495px;
+    }
 }
 
 .tabs {
