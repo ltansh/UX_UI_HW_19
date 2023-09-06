@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: #FAFBF1;
     font-family: 'Roboto', sans-serif;
@@ -16,6 +20,7 @@ section {
     bottom: 0px;
     right: 20px; 
     padding: 40px;
+    z-index: 100;
 }
 .roundedFixedBtn{
   height: 88px;
@@ -63,31 +68,31 @@ button {
     transition: all 0.5s ease-in-out;
 }
 
-button:hover {
-    background-color: #F2994A;
-    }
-
 .btnContent {
+    position: relative;
     display: inline-block;
     vertical-align: middle;
     color: #FAFBF1;
-    /* transition: all 0.5s ease-in-out; */
+    transition: all 0.5s ease-in-out;
 }
 
+.btnContent:hover {
+    background-color: #F2994A;
+    }
 
 .iconHidden {
     /* width: 32px;
     height: 32px; */
     position: absolute;
+    transform: translate(0px, 0px);
     opacity: 0;
     transition: all 0.5s ease-in-out;
 }
 
-.iconHidden:hover {
+.btnContent:hover .iconHidden {
     position: relative;
     opacity: 1;
-    translate: 0px, 20px;
-}
+    transform: translate(0px, 20px);}
 
 i {
     padding-left: 5px;
@@ -124,17 +129,20 @@ nav {
     grid-template-areas: 
     "img tabs tabs";
     align-items: flex-end;
-    gap: 40px;    
+    gap: 40px;
 }
 
-nav img {
-    grid-area: img;
-    max-width: 75%;
-    height: auto;
+.logoImg img {
+    max-width: 76%;
     border-bottom: solid 1px #212121;
     padding-bottom: 20px;
     margin-right: 60px;
     margin-top: 40px;
+    grid-area: img;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    animation: logoAnimate 2s infinite
 }
 
 .tabs {
