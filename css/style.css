@@ -65,7 +65,7 @@ button {
     margin-top: 40px;
     margin-bottom: 50px;
     cursor: pointer;
-    transition: all 0.5s ease-in-out;
+    transition: all 1.5s ease-in-out;
 }
 
 .btnContent {
@@ -78,24 +78,26 @@ button {
 
 .btnContent:hover {
     background-color: #F2994A;
+    padding-left: 50px;
     }
 
 .iconHidden {
-    /* width: 32px;
-    height: 32px; */
     position: absolute;
-    transform: translate(0px, 0px);
+    transform: translateX(calc(-50%)) translateY(calc(-10% + 20px));
     opacity: 0;
     transition: all 0.5s ease-in-out;
 }
 
 .btnContent:hover .iconHidden {
-    position: relative;
+    display: inline-block;
     opacity: 1;
-    transform: translate(0px, 20px);}
+    transform: translateX(calc(-50% - 20px)) translateY(calc(-10%));
+    transition: all 0.5s ease-in-out;
+}
 
 i {
     padding-left: 5px;
+    font-size: 1.5rem;
     display: inline-block;
     vertical-align: middle;
     color: #FAFBF1;
@@ -106,11 +108,11 @@ a {
     color:#FAFBF1;
 }
 
-/* button img {
+button img {
     width: 25px;
     height: 25px;
     padding-left: 5px;
-} */
+}
 
 .sectionDivider {
     grid-area: sectionDivider;
@@ -240,16 +242,19 @@ nav {
 }
 
 
-.hiddenImg img {
-    position: absolute;
-    opacity: 0;
-    width: 100%;
-    height: 100%;
+.hiddenImg {
+    display: none;
 }
 
-.hiddenImg:hover {
-    opacity: 1;
+
+#skillsContainer :has(button:hover) .displayImg {
+    display: none;
 }
+
+#skillsContainer :has(button:hover) .hiddenImg {
+    display: block;
+}
+
 
 h2 {
     font-family: 'Playfair Display', serif;
