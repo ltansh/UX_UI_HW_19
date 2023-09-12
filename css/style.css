@@ -424,7 +424,13 @@ footer .sectionDivider {
     #aboutText h1 {
         font-size: 32px;
     }
+
+    .logoSprite {
+        max-width: auto;
+        margin-right: 0px;
+    }
 }
+
 @media only screen and (max-width: 800px) {
 
     nav {
@@ -436,8 +442,9 @@ footer .sectionDivider {
         align-items: flex-start;
     }
 
-    nav img {
-        width: auto;
+  .logoSprite {
+        width: 50%;
+        margin-right: 0px;
     }
 
     .tabs {
@@ -483,8 +490,9 @@ footer .sectionDivider {
             align-items: flex-start;
         }
 
-        nav img {
-            width: 70%;
+        .logoSprite {
+            width: 100%;
+            margin-right: 0px;
         }
 
         .tabs {
