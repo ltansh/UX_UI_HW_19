@@ -401,14 +401,9 @@ footer .sectionDivider {
     margin-bottom: 20px;
 }
 
-/* .socials {
-    margin-right: 10px;
-} */
-
 .sectionDivider i {
     color: #212121;
     font-size: 2.5rem;
-    /* font-weight: bold; */
     display: inline-block;
     vertical-align: middle;
     margin-left: 10px;
@@ -519,10 +514,26 @@ footer .sectionDivider {
             display: flex;
             flex-direction: column;
         }
+
+        .sectionDivider i {
+            font-size: 2rem;
+            margin: auto;
+        }
     }
 
     @media only screen and (max-width: 380px) {
     .tabs > li:not(:last-child) {
         padding-right: 15px;
+    }
+
+
+.copyrightText {
+    font-size: 13px;
+    text-align: left;
+}
+
+    .sectionDivider i {
+        font-size: 1.5rem;
+        margin: auto;
     }
     }
