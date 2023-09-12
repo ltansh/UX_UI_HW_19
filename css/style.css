@@ -389,8 +389,29 @@ h2 {
 
 footer .sectionDivider {
     margin: 0px 5%;
-    margin-bottom: 80px;
+    margin-bottom: 120px;
     border-bottom: solid 1px #212121;
+}
+
+.footerContent {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 20px;
+}
+
+/* .socials {
+    margin-right: 10px;
+} */
+
+.sectionDivider i {
+    color: #212121;
+    font-size: 2.5rem;
+    /* font-weight: bold; */
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 10px;
 }
 
 /* Media Breakpoints */
